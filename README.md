@@ -2,7 +2,17 @@
 
 File-based cache for JSON-serializable data.
 
+## Install
+
+Requires at least Node.js v14.14.0.
+
+```
+npm install @uwdata/file-cache
+```
+
 ## Usage
+
+`@uwdata/file-cache` is an ESM-only module - you are not able to import it with `require()`.
 
 ### Standard Usage
 
