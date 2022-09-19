@@ -1,0 +1,19 @@
+{
+  "name": "@uwdata/file-cache",
+  "version": "0.0.1",
+  "description": "File-based cache for JSON-serializable data.",
+  "license": "BSD-3-Clause",
+  "author": "Jeffrey Heer",
+  "main": "src/file-cache.js",
+  "module": "src/file-cache.js",
+  "type": "module",
+  "scripts": {
+    "test": "mocha 'test/**/*-test.js'",
+    "lint": "eslint '**/*.js'",
+    "prepublishOnly": "npm run test & npm run lint"
+  },
+  "devDependencies": {
+    "eslint": "^8.23.1",
+    "mocha": "^10.0.0"
+  }
+}
