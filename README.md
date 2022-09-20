@@ -21,7 +21,7 @@ import { fileCache, deleteCache } from '@uwdata/file-cache';
 
 // create a new cache, writes to '.cache' in current working dir
 // the cache directory will be created if it does not exist
-const cache = fileCache();
+const cache = await fileCache();
 
 // set cache value writes both to in-memory map and to disk
 await cache.set('key', { value: true });
@@ -44,7 +44,7 @@ await deleteCache();
 import { fileCache, deleteCache } from '@uwdata/file-cache';
 
 // create a new cache with custom directory and time-to-live
-const cache = fileCache({
+const cache = await fileCache({
   cacheDir: '.my-cache-dir', // custom cache directory
   defaultTTL: 60 * 1000, // default time-to-live before expiration (ms)
 });
